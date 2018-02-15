@@ -10,5 +10,12 @@
   ],
   "plugins": [
     "transform-object-rest-spread"
-  ]
+  ],
+  "env": {
+    "develop": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  }
 }

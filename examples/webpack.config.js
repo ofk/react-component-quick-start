@@ -3,7 +3,10 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './examples/index.jsx',
+  entry: [
+    'react-hot-loader/patch',
+    './examples/index.jsx',
+  ],
   output: {
     filename: '[name].js',
   },
@@ -27,9 +30,14 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    hot: true,
+  },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devtool: '#inline-source-map',
   resolve: {
