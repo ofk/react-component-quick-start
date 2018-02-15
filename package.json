@@ -51,6 +51,7 @@
     "moduleFileExtensions": [
       "js",
       "jsx"
-    ]
+    ],
+    "collectCoverage": true
   }
 }
