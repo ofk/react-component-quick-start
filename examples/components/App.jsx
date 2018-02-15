@@ -1,5 +1,6 @@
 import React from 'react';
+import { Hello } from 'react-component-quick-start';
 
 export default () => (
-  <p>Hello, World!</p>
+  <Hello text="World" />
 );

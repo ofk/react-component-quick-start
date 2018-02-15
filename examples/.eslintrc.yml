@@ -1,0 +1,5 @@
+---
+rules:
+  global-require: off
+  import/extensions: off
+  import/no-unresolved: off

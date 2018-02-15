@@ -41,6 +41,9 @@ module.exports = {
   ],
   devtool: '#inline-source-map',
   resolve: {
+    alias: {
+      [require('../package.json').name]: path.join(__dirname, '..', 'src'),
+    },
     extensions: ['.js', '.jsx'],
   },
 };
