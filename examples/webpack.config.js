@@ -3,14 +3,14 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './examples/index.js',
+  entry: './examples/index.jsx',
   output: {
     filename: '[name].js',
   },
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: path.join(__dirname, '..', 'node_modules'),
         loader: 'babel-loader',
       },
@@ -33,6 +33,6 @@ module.exports = {
   ],
   devtool: '#inline-source-map',
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.jsx'],
   },
 };

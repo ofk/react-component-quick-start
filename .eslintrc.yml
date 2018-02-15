@@ -24,3 +24,5 @@ rules:
       functions: never
   max-len: off
   no-console: off
+
+  import/no-extraneous-dependencies: off
