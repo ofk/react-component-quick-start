@@ -8,6 +8,7 @@ module.exports = {
     './examples/index.jsx',
   ],
   output: {
+    path: path.join(__dirname, '..', '.tmp'),
     filename: '[name].js',
   },
   module: {
