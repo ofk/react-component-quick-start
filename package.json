@@ -10,6 +10,8 @@
     "build": "cross-env NODE_ENV=production babel src -d dist",
     "prebuild-pages": "rimraf .tmp",
     "build-pages": "cross-env NODE_ENV=production webpack --config examples/webpack.config.js --progress --profile",
+    "predeploy": "npm run build-pages",
+    "deploy": "gh-pages -d .tmp",
     "lint": "eslint --ext .js,.jsx --fix .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
