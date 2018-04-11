@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A minimal React component",
   "main": "src/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --config examples/webpack.config.js --host 0.0.0.0 --progress --profile",
     "prebuild": "rimraf dist",
